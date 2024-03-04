@@ -115,5 +115,5 @@ func (w *writer) diskAvail() int64 {
 	if err := syscall.Statfs(Config.Path, &fs); err != nil {
 		return 0
 	}
-	return int64(fs.Bavail) * fs.Bsize
+	return int64(fs.Bavail) * int64(fs.Bsize)
 }
