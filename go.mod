@@ -1,3 +1,3 @@
-module github.com/yoonper/diskqueue
+module github.com/markhu53/diskqueue
 
 go 1.18
