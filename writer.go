@@ -110,10 +110,11 @@ func (w *writer) segmentNum() int64 {
 }
 
 // disk available space
-func (w *writer) diskAvail() int64 {
+/*func (w *writer) diskAvail() int64 {
 	fs := syscall.Statfs_t{}
 	if err := syscall.Statfs(Config.Path, &fs); err != nil {
 		return 0
 	}
 	return int64(fs.Bavail) * int64(fs.Bsize)
 }
+*/
