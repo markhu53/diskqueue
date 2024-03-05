@@ -61,9 +61,9 @@ func (w *writer) open() error {
 		return errors.New("segment num exceeds the limit")
 	}
 
-	if w.diskAvail() < Config.MinRequiredSpace {
-		return errors.New("disk available space < minimum required space")
-	}
+	//if w.diskAvail() < Config.MinRequiredSpace {
+	//	return errors.New("disk available space < minimum required space")
+	//}
 
 	var err error
 	time.Sleep(time.Microsecond) // keep unique
